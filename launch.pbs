@@ -1,0 +1,8 @@
+#!/bin/bash -l
+#SBATCH --nodes=1 --ntasks=80
+
+export STARCCM=/scratch/prj/cfd_simulations/terryarter/software/starccm/17.04.008-R8/STAR-CCM+17.04.008-R8/star/bin
+
+ 
+
+ $STARCCM/starccm+ -batch -power -podkey "Hh/ZYz6Q7np2P8SofXy3tA" -licpath 1999@flex.cd-adapco.com -np 80 'PEMFC_for validation_3_Y.sim'
